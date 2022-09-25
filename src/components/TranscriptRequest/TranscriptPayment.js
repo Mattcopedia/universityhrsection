@@ -193,6 +193,12 @@ const WhiteFlexRowRootzw = styled.div`
   margin-left: 5px;
   margin-right:5px; 
   margin-top: 15px; 
+
+  @media ${devices.mobileL} { 
+    margin-left: 0px;
+    padding: 45px 8px;
+
+    } 
 `;
 
 
@@ -204,6 +210,9 @@ const FlexColumnzw = styled.div`
   gap: 14px;
   justify-content: space-between;
   align-items: flex-start;
+
+
+
 `;
 
 const FlexColumn6zw = styled.div`

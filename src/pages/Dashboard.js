@@ -66,10 +66,12 @@ if(focusDiv.current) focusDiv.current.focus();
             <FlexColumna>                       
                 <FlexColumn1>
 
-                <FlexColumn2>  
-                 <Text4 htmlFor="address"> Student Id</Text4>        
+                <FlexColumn3 >  
+                 <Text4 htmlFor="address"> Student Id</Text4>    
+              
                   <input ref={focusDiv} className='form' placeholder='STA/11/7009' type="text" id="address" required/>  
-                  </FlexColumn2> 
+                
+                  </FlexColumn3> 
              
                  <FlexColumn2 margin={`10px 0px 10px 0px`}> 
                  
@@ -279,6 +281,28 @@ const FlexColumn2 = styled.div`
   align-items: center;
   margin: ${(props) => props.margin};
 `;
+
+const FlexColumn3 = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+
+  @media ${devices.mobileL} { 
+ 
+    margin-right: 55px; 
+
+  } 
+
+  @media ${devices.tablet} { 
+ 
+    margin-right: 58px; 
+
+  } 
+
+`;
+
 const Text4 = styled.label`
   font-size: 16px;
   font-family: Roboto;

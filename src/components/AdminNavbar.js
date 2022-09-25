@@ -2,7 +2,7 @@
 import Button from '@material-tailwind/react/Button';
 import Icon from '@material-tailwind/react/Icon';   
 import React from "react";
-import { Link } from 'react-router-dom';
+
 import styled from "styled-components";   
 
 
@@ -74,9 +74,9 @@ export default function AdminNavbar({ showSidebar, setShowSidebar }) {
     
 
         <div className='flex  justify-center  flex-row '>
-          <Link to="/">
-        <Paragraph>UNIGIG</Paragraph> 
-        </Link>
+        
+        <Paragraph>UNIGIG</Paragraph>  
+       
         
         </div> 
      

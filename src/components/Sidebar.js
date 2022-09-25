@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styled from "styled-components";  
 import AdminNavbar from './AdminNavbar';
-import { NavLink } from "react-router-dom";  
+import { NavLink, Link} from "react-router-dom";  
 import Button from '@material-tailwind/react/Button';
 import Icon from '@material-tailwind/react/Icon';  
 import "./br.css"
@@ -44,8 +44,9 @@ export default function Sidebar() {
                         </Button> 
                   </div>
                 
-
-                  <ImageRoot src={unigig}  /> 
+                  <Link to="/">
+                  <ImageRoot src={unigig}  />
+                  </Link> 
                  
                    
                  
@@ -100,7 +101,7 @@ export default function Sidebar() {
 
 
                      <div className='focus:blue'>
-                     <NavLink to="/" exact  >
+                    
                   <FlexRow2 margin={`0px 0px 33px 0px`} onClick={() => setShowSidebar('-left-64')}>
                     <NeonCarrotRectangle margin={`0px -2px 0px 0px`} />
                   
@@ -109,7 +110,7 @@ export default function Sidebar() {
                       Contact</Text2> 
              
                   </FlexRow2> 
-                  </NavLink>   
+                 
              
                      </div>
 

@@ -18,7 +18,7 @@ const TranscriptPayment = () => {
         <Image2 src={`https://file.rendit.io/n/7I3yZRjpHsAGEb48rZcx.svg`} />
         <Text1>Successful</Text1>
         <Paragraph>
-          Transcript Payment<br className="responsivemodal"></br> has been made successfully{" "}
+          Your transcript request<br className="responsivemodal"></br> has been submitted successfully{" "}
         </Paragraph>
         <RoyalPurpleText onClick={() => setShouldshow(false)}>Ok</RoyalPurpleText>
       </FlexColumn>

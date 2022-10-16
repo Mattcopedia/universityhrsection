@@ -3,18 +3,18 @@ import styled from "styled-components";
 import "../br.css" 
 
 
-const TranscriptApplicationHeader = () => {
+const ActiveApplicationHeader = () => {
   return (
     <div>
             <div className="grid grid-cols-5 py-4 mb-16 mx-4 resultcolor ">
        <div className=" col-span-4"> 
        <FlexColumnRoot>
-      <Paragraph> Transcript <br className="responsivemodal"></br> Application </Paragraph> 
+      <Paragraph> Active <br className="responsivemodal"></br> Application </Paragraph> 
      </FlexColumnRoot>
         
        </div>
        <div className="">   
-       <ImageRoot src={`https://file.rendit.io/n/UJPPBLuU908VNZAufpz4.png`} /> 
+       <ImageRoot src={`https://file.rendit.io/n/UJPPBLuU908VNZAufpz4.png`}/> 
        </div>   
      
     </div> 
@@ -70,4 +70,4 @@ width: 89px;
 height: 89px;
 `;
 
-export default TranscriptApplicationHeader
+export default ActiveApplicationHeader

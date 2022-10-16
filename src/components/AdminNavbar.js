@@ -51,15 +51,7 @@ export default function AdminNavbar({ showSidebar, setShowSidebar }) {
               <Text9>4</Text9>
             </Element9>
           </Element8>
-          <FlexRow7 gap={`9px`}>
-          
-            <Image14
-              src={`https://file.rendit.io/n/uEEmqxF9L70TUSggeNY6.svg`}
-            />
-           
-            <Text10 color={`#2d0353`}>Help</Text10>
-        
-          </FlexRow7>
+    
           <FlexRow7 gap={`10px`}>
             <Image15
               src={`https://file.rendit.io/n/9H9ckLV3IMzBA6LkmH5S.svg`}

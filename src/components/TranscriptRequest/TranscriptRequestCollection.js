@@ -1,4 +1,5 @@
 import Sidebar from 'components/Sidebar';
+import TranscriptApplicationHeader from 'components/TranscriptApplication/TranscriptApplicationHeader';
 import React from 'react'
 
 import { useRef} from 'react'
@@ -14,6 +15,7 @@ const TranscriptCollection = () => {
    return (
     <div>
         <Sidebar />
+        <TranscriptApplicationHeader />
        <RootRootaw>
                <div className='md:ml-9'>
              <div className=' bg-gray-100 mb-11 pb-5 pl-5 lg:pl-0  mx-auto lg:mx-1 pt-8 lg:pt-4'>
@@ -109,7 +111,7 @@ const TranscriptCollection = () => {
               </div>
              </FlexColumnaw>
  
-             </div>  
+             </div >  
              </div>
               
               

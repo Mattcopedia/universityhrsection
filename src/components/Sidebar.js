@@ -49,11 +49,12 @@ export default function Sidebar() {
                   </Link> 
                  
                    
-                 
+                 <Link to="/transcript-collection">
                     <WhiteFlexRow>
                 <Image1a src={`https://file.rendit.io/n/7OUSS3WQDM8590MQKxa2.svg`} />
                 <Text2a>New application</Text2a> 
               </WhiteFlexRow>
+              </Link>
              
 
                      <div className='focus:blue'>
@@ -71,21 +72,23 @@ export default function Sidebar() {
                      </div>
 
 
+
                      <div className='focus:blue'>
-                     <NavLink to="/transcript-request" exact  >
+                     <NavLink to="/active-application" exact  >
                   <FlexRow2 margin={`0px 0px 33px 0px`} onClick={() => setShowSidebar('-left-64')}>
-                    <NeonCarrotRectangle margin={`0px -30px 0px 0px`} />
+                    <NeonCarrotRectangle margin={`0px -2px 0px 0px`} />
                   
-                    <Image1 src={`https://file.rendit.io/n/XLMjS3X4t1TDRLDZyOU4.svg`} />
-                    <Text2  >
-                      Transcript Request</Text2> 
+                    <Image1  src={`https://file.rendit.io/n/MTx8bc0fuyXVxVtAdUtf.svg`} />
+                    <Text2  margin={`0px 88px 0px 0px`}  >
+                      Active</Text2> 
              
                   </FlexRow2> 
-                  </NavLink>   
+                  </NavLink>
+                 
              
                      </div>
 
-                     <div className='focus:blue'>
+                     {/* <div className='focus:blue'>
                      <NavLink to="/transcript-payment" exact  >
                   <FlexRow2 margin={`0px 0px 33px 0px`} onClick={() => setShowSidebar('-left-64')}>
                     <NeonCarrotRectangle margin={`0px -2px 0px 0px`} />
@@ -97,19 +100,20 @@ export default function Sidebar() {
                   </FlexRow2> 
                   </NavLink>   
              
-                     </div>
+                     </div> */}
 
 
                      <div className='focus:blue'>
-                    
+                     <NavLink to="/history" exact  >
                   <FlexRow2 margin={`0px 0px 33px 0px`} onClick={() => setShowSidebar('-left-64')}>
                     <NeonCarrotRectangle margin={`0px -2px 0px 0px`} />
                   
-                    <Image1 src={`https://file.rendit.io/n/fito0BWtBaTeiolKxOGR.svg`} />
+                    <Image1 src={`https://file.rendit.io/n/jIt7rpAWKWaTdUdfTpU5.svg`} />
                     <Text2  margin={`0px 88px 0px 0px`}  >
-                      Contact</Text2> 
+                      History</Text2> 
              
                   </FlexRow2> 
+                  </NavLink>
                  
              
                      </div>

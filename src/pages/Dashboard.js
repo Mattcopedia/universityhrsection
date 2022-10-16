@@ -4,6 +4,7 @@
        import Sidebar from "components/Sidebar";
     
       import "../components/br.css"
+import { Link } from "react-router-dom";
 
    
 
@@ -31,10 +32,10 @@ if(focusDiv.current) focusDiv.current.focus();
                 
               <FlexColumn>
                 <FlexRow>
-                  <Text10>Welcome Back</Text10>
-                  <Text20>🚀</Text20>
+                  <Text10></Text10>
+                  <Text20></Text20>
                 </FlexRow>
-                <Text30>Mrs.Ayomide <br className="responsivemodal"></br> Akinyemi</Text30>
+                <Text30>Welcome to <br className="responsivemodal"></br> Transcript request <br className="responsivemodal"></br> Portal</Text30>
               </FlexColumn>  
 
 
@@ -51,70 +52,57 @@ if(focusDiv.current) focusDiv.current.focus();
               </div>
               </div>     
               </div>
-
-              <EditProfileRoot>Enter Student Details to View Result</EditProfileRoot>
-         
-
-        <section className=" mb-4 mx-auto body-font overflow-hidden bg-white"> 
-        <div className="container ">
-          <div className="flex flex-wrap ">       
-              <div className="flex mx-auto items-center flex-wrap w-full ">
-              <RootRoot>
-             
-            <div>
-             
-            <FlexColumna>                       
-                <FlexColumn1>
-
-                <FlexColumn3 >  
-                 <Text4 htmlFor="address"> Student Id</Text4>    
-              
-                  <input ref={focusDiv} className='form' placeholder='STA/11/7009' type="text" id="address" required/>  
-                
-                  </FlexColumn3> 
-             
-                 <FlexColumn2 margin={`10px 0px 10px 0px`}> 
-                 
-
-                 <Text4 htmlFor="Semeter/Year"> Semester/year</Text4>        
-                 <div className="amendment  pr-16 md:pr-0 lg:pr-0 ">
-                <select>
-                    <option selected>1st semester for 2020-2021 </option> 
-                    <option>1st semester for 2020-2021 </option>
-                    <option>1st semester for 2020-2021 </option>
-                    <option>1st semester for 2020-2021 </option>
-                    <option>1st semester for 2020-2021 </option> 
-                </select> 
-
-                </div> 
-
-                 </FlexColumn2>  
-   
-
-                    <div className='newbtn mr-14 md:mr-0 lg:mr-0 '>
-                    <button className='purplebtn' >Call Up Record</button> 
-                    </div>
-              
-                 
-               
-                </FlexColumn1> 
-                <div>
-           
-             </div>
-            </FlexColumna>
-
-            </div>  
             
-           </RootRoot>  
+              <div className="mx-7 my-4 ">
+                   
+                   <div className="container mx-auto mb-4 "> 
+                           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                           <div className="flex justify-center text-6xl border-2 -300 bg-gray-100  p-6 ">
+                            
+                           <NeonCarrotFlexRow>
+                    <FlexColumn1 width={`148px`}>
+                        <Text1>Assigned Request</Text1>
+                        <Text2>0</Text2>
+                        </FlexColumn1>
+                        <Image1 src={`https://file.rendit.io/n/9Vr3KV0eOirqoe47C5Ev.svg`} />
+                    </NeonCarrotFlexRow>
+                           
+                           </div>
+                            
+                                    
+                           <div className="flex justify-center text-6xl border-2  bg-gray-100 p-6 ">
+                              
+                           <NeonCarrotFlexRow>
+                    <FlexColumn1 width={`148px`}>
+                        <Text1>Completed Request</Text1>
+                        <Text2>0</Text2>
+                        </FlexColumn1>
+                        <Image1 src={`https://file.rendit.io/n/1cRNFELBdOw52PMM094O.svg`} />
+                    </NeonCarrotFlexRow>
 
+                         
 
-              
-              </div> 
-            
+                           </div>
+          
+                            
+                       </div>
+                         </div>
+                         </div>  
+
+                         <div >
+
+                <RectangleRootRoot>
+                  <Link to="/transcript-collection">
+                    <div className='bg-gray-100 px-11 py-11'>
+                <NeonCarrotText>Start a new application</NeonCarrotText>
+                      </div>
+                      </Link>
+                </RectangleRootRoot>
+
             </div>
-          </div>
-    
-      </section>
+
+
+      
                   
         </>
     );
@@ -204,130 +192,72 @@ const Text40 = styled.div`
 
 
 
-const RootRoot = styled.div`
 
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: auto;
-  background-color: #FAFAFA;
-  margin-bottom: 170px; 
-
-  @media ${devices.mobileL} { 
-    min-width: 100px; 
-    margin: 0px;
-    overflow: hidden; 
-   }  
-
-`;
-
-
-
-const FlexColumna = styled.div`
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-  padding-right:60px; 
-  padding-left:60px; 
-
-
-  @media ${devices.tablet} {
-    margin-left: 90px;
-
-    padding-left:27px;  
-    padding-right:40px; 
-    margin-left:10px
-  }    
-
-
-  @media ${devices.mobileL} { 
-    
-    margin-left: 20px;
-    
-    padding-left:0px;  
-    padding-right:0px; 
-   
-  }  
-
-`;
 const FlexColumn1 = styled.div`
-  padding-top: 10px; 
+  align-self: stretch;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
+  gap: 13px;
+  flex-grow: 1;
   align-items: center;
-  margin: 0px 0px 5px 0px;
-
-  @media ${devices.mobileL} { 
-    margin: 0px 0px 0px 0px;
-    margin-right: 145px; 
-
-  } 
-`; 
-
-
-
-
-const FlexColumn2 = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  justify-content: center;
-  align-items: center;
-  margin: ${(props) => props.margin};
+  width: ${(props) => props.width};
 `;
-
-const FlexColumn3 = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  justify-content: center;
-  align-items: center;
-
-  @media ${devices.mobileL} { 
- 
-    margin-right: 55px; 
-
-  } 
-
-  @media ${devices.tablet} { 
- 
-    margin-right: 58px; 
-
-  } 
-
-`;
-
-const Text4 = styled.label`
-  font-size: 16px;
+const Text1 = styled.div`
+  font-size: 18px;
   font-family: Roboto;
-  line-height: 24px;
+  line-height: 27.09px;
+  color: #505050;
+`;
+const Text2 = styled.div`
+  font-size: 36px;
+  font-family: Roboto;
+  line-height: 54.18px;
   color: #505050;
   align-self: flex-start;
+`;
 
-  @media ${devices.mobileL} { 
-  
-    padding-left: 10px;
-  }
-
+const NeonCarrotFlexRow = styled.div`
+  width: 239px;
+  background-color: rgba(242, 153, 74, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 31px;
+  align-items: flex-start;
+  border-radius: 10px;
+  padding: 18px 15px 17px 15px;
+`;
+const Image1 = styled.img`
+  width: 50px;
+  height: 50px;
 `;
 
 
 
-const EditProfileRoot = styled.div`
-  color: #2d0353;
-  font-size: 24px;
+const RectangleRootRoot = styled.div`
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px 49px 0px;
+ 
+`;
+
+const NeonCarrotText = styled.div`
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #df8909;
+  font-size: 16px;
   font-family: Product Sans Medium;
-  line-height: 23.28px;
-  display:flex;
-  justify-content: center; 
-  margin-bottom: 10px;
-  font-weight: bold;
+  line-height: 15.52px;
+  white-space: nowrap;
+  background-color: rgba(224, 137, 9, 0.1);
+  border-radius: 6px;
+  padding: 30px;
 `;
 
 

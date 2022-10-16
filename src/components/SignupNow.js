@@ -2,7 +2,7 @@
 
 import React from 'react'
 import styled from "styled-components";  
-import login from "../assets/img/parent.PNG";
+import login from "../assets/img/Transcriptrequest.PNG";
 import "./br.css" 
 import { Link } from 'react-router-dom';
  
@@ -46,12 +46,12 @@ const SignupNow = () => {
                 <form>           
                 <FlexColumn2 margin={`0px 0px 10px 0px`}> 
 
-                <Text4 htmlFor="Surname"> Student FirstName</Text4>        
+                <Text4 htmlFor="Surname">  FirstName</Text4>        
                  <input className='form' placeholder='Akinyemi' type="text" id="Surname"/>  
                  </FlexColumn2> 
                  <FlexColumn2 margin={`0px 0px 10px 0px`}> 
 
-                 <Text4 htmlFor="FirstName"> Student Surname</Text4>        
+                 <Text4 htmlFor="FirstName">  Surname</Text4>        
                  <input className='form' placeholder='Ayomide' type="text" id="FirstName"/>  
                  </FlexColumn2> 
                  <FlexColumn2 margin={`0px 0px 10px 0px`}> 
@@ -61,19 +61,11 @@ const SignupNow = () => {
                  </FlexColumn2> 
                  <FlexColumn2 margin={`0px 0px 10px 0px`}>
 
-                 <Text4>Login with your email or Phone number</Text4>  
-                   <div className='flex  flex-row gap-5 pr-40'>
-                   <div className='flex  flex-row gap-3'>
-                 <Text4> <input type="radio" id="Email" name="info" value="Email" /> Email</Text4>  
-                 </div> 
-                 <div className='flex flex-row gap-3 '>
-                 <Text4> <input type="radio" id="Phone number" name="info" value="Phone number" /> Phone number</Text4>  
-                 </div>  
-                 </div>     
+                   
                  
 
-                 <Text4 htmlFor="parentemail"> Parent Email</Text4>        
-                 <input className='form' placeholder='akinzzz@zzz.com' type="email" id="parentemail"/>  
+                 <Text4 htmlFor="parentemail"> Email</Text4>        
+                 <input className='form' placeholder='akinzzz@zzz.com' type="email" id="email"/>  
                  </FlexColumn2>  
                  
                 <button className='purplebtn' type='submit'>Sign Up</button> 

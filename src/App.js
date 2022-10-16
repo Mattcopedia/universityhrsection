@@ -64,6 +64,12 @@ import TranscriptRequest from 'components/TranscriptRequest/TranscriptRequest';
 import TranscriptCollection from 'components/TranscriptRequest/TranscriptRequestCollection';
 import TranscriptPayment from 'components/TranscriptRequest/TranscriptPayment';
 import TranscriptApplication from 'components/TranscriptApplication/TranscriptApplication';
+import ActiveAppliaction from 'components/ActiveApplication/ActiveApplication';
+import ActiveApplicationProgress from 'components/ActiveApplication/ActiveApplicationProgress';
+import HistoryProgress from 'components/History/HistoryProgress';
+import History from 'components/History/History';
+
+
 // import { PrivateRoute } from './auth/PrivateRoute';
 
 
@@ -142,48 +148,22 @@ function App() {
             <Route exact path="/browse-uploaded-doc" component={BrowseUploadedDoc} />
             <Route exact path="/view-doc" component={ViewDoc} />
             <Route exact path="/unblocking" component={Unblocking} /> 
+
+            
             <Route exact path="/course-reg-stats" component={CourseRegStats} /> 
             <Route exact path="/course-unit" component={CourseUnit} />  
             <Route exact path="/create-course" component={CreateCourse} />  
+
             <Route exact path="/transcript-request" component={TranscriptRequest} />  
             <Route exact path="/transcript-collection" component={TranscriptCollection} />
             <Route exact path="/transcript-payment" component={TranscriptPayment} />
             <Route exact path="/transcript-application" component={TranscriptApplication} />
+            <Route exact path="/active-application" component={ActiveAppliaction} />
+            <Route exact path="/active-application-progress" component={ActiveApplicationProgress} />
+            <Route exact path="/history-progress" component={HistoryProgress} />
+            <Route exact path="/history" component={History} />
  
-            
-{/* 
-            padding at the left placeholder profile +++ more to be done
-
-            default will be unselected first checkbox coursereg  +++
-
-            push up profile info make the remaining 3 like the first one +++
-
-            align properly printout and they shouldn't touch the end of the screen
-
-            Course List and not List of Registered Courses. +++
-          
-            popup comes up after they click transfer form and not on Page load  +++
-          
-            align signature and date properly like on the Figma, +++ 
-
-            each page must have name of rakoni logo and university name.  
-
-            margin dont touch end of screen(including Text and icons )
-            and screen table should have enough space both outside and inbetween on different devices +++ continous improvement for this. 
-
-            cgpa GpaTool
-            he will give me the Cgpa logic
-
-            all the text in Course Form the text should be center. All text even course form should be centered. All First letter in Capital CASES. 
-
-            Apply all this to Other 
-
-            First-Semester-For 2020/2021 Academic Session. +++
-
-            Fully functional student module by next zoom demo.  
-
-            Make Demo myself from my laptop */}
-
+        
 
 
 

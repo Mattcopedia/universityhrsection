@@ -1,108 +1,205 @@
 
-       import React, {useRef,useEffect} from "react"; 
+       import React from "react"; 
+       import { NavLink } from 'react-router-dom';
        import styled from "styled-components";
        import Sidebar from "components/Sidebar";
-    
-      import "../components/br.css"
-import { Link } from "react-router-dom";
+  
 
-   
+ const HomePage = () => { 
+ 
 
-       
-
-export default function Dashboard() {  
-       
-  const focusDiv = useRef();
-
-  useEffect(() => {
-if(focusDiv.current) focusDiv.current.focus();  
-}, [focusDiv]);
-
-
-    return (   
+    return (
         <>
         <Sidebar />  
-
-        <div className="bg-white py-5">  
+      
+        <div className="bg-white py-5">   
 
         <div class="max-w-7xl ml-7 heropattern py-11 px-3 mr-7  grid grid-cols-12 ">
               <div class="col-span-12 mt-0.4   md:col-span-12 object-fill lg:col-span-6">
+              
+                 {/* <FlexColumn >
+                 <FlexRow> 
+                   <Text10>HR Officer</Text10>
+                   <Text20></Text20> 
+                 </FlexRow>
+                 <Text30>Welcome to  <br className="responsivemodal"></br>Rakoni Verification</Text30>
+               </FlexColumn>   */}
 
-              {/* <img width={700} src={welcomeone} alt="welcome" /> */}
-                
-              <FlexColumn>
+               <FlexColumn1>
                 <FlexRow>
-                  <Text10></Text10>
-                  <Text20></Text20>
+                  <Text10>HR Officer</Text10>
+                  <Text20>🚀</Text20>
                 </FlexRow>
-                <Text30>Welcome to <br className="responsivemodal"></br> Transcript request <br className="responsivemodal"></br> Portal</Text30>
-              </FlexColumn>  
-
+                <Text30>HR Officer Name<br className="responsivemodal"></br> </Text30>
+              </FlexColumn1>  
+   
 
               </div>
 
               <div class="col-span-12 pb-0.5   md:col-span-12 object-fill lg:col-span-6 "> 
-       
+           
 
-              <Paragraph>
+              <Paragraph> 
             Develop a passion for learning. If you do, you will never cease to grow.
-            – <Text40>Anthony J. D’Angelo</Text40>  
+            – <Text40>Anthony J. D’Angelo </Text40>  
           </Paragraph>
 
               </div>
-              </div>     
               </div>
-            
-              <div className="mx-7 my-4 ">
+
+
+
+           
+
+           
+           <h1 className="text-left mx-7  text-indigo-900 font-semibold mt-3 text-xl">List of University</h1>     
+
+           <div className="mx-7 my-4 ">
+            <div className="container  mx-auto mb-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div className="flex justify-center text-6xl border-2   p-6 bg-gray-100   ">  
+
+                      <WhiteFlexColumnRoot>
+                         <Image1 src={`https://file.rendit.io/n/4F2P1JUnvKVbuGma6MaZ.png`} />
+                      <Text1>UNILORIN</Text1>
+                      </WhiteFlexColumnRoot>
+                  
+                    </div> 
+
+
+
+                    <div className="flex justify-center text-6xl border-2 bg-gray-100  p-6 ">
+                 
+                    <WhiteFlexColumnRoot1>
+                      <Ellipses src={`https://file.rendit.io/n/b8fZHJNG7shy8q6nEQcL.png`} />
+                      <Text2>&nbsp;&nbsp; &nbsp;  FUTA &nbsp;&nbsp;&nbsp;</Text2>  
+                    </WhiteFlexColumnRoot1>
+              
+                      
+                    </div> 
+
+                    <div className="flex  justify-center text-6xl border-2 bg-gray-100 p-6 ">
+                        
+                        
+                        <WhiteFlexColumnRoot1> 
+                       <Ellipses src={`https://file.rendit.io/n/VQ71R9HlaOXIjm24ZWHv.png`} />
+                        <Text2>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; UI &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</Text2>
+                        </WhiteFlexColumnRoot1>      
+                        
+       
+                        </div>
+                            
+
+                    <div className="flex justify-center text-6xl border-2 bg-gray-100   p-6 ">
+
+              
+                    <WhiteFlexColumnRoot1>
+                        <Ellipses src={`https://file.rendit.io/n/IId3oTLsQK9A9H4yRRXH.png`}  />
+                        <Text2>&nbsp;&nbsp; &nbsp; NOUN &nbsp;&nbsp;&nbsp;</Text2>
+                        </WhiteFlexColumnRoot1>   
                    
-                   <div className="container mx-auto mb-4 "> 
+
+                    </div> 
+
+                </div>
+                  </div> 
+                   
+                   <div className="container mx-auto mb-4"> 
                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                            <div className="flex justify-center text-6xl border-2 -300 bg-gray-100  p-6 ">
                             
-                           <NeonCarrotFlexRow>
-                    <FlexColumn1 width={`148px`}>
-                        <Text1>Assigned Request</Text1>
-                        <Text2>0</Text2>
-                        </FlexColumn1>
-                        <Image1 src={`https://file.rendit.io/n/9Vr3KV0eOirqoe47C5Ev.svg`} />
-                    </NeonCarrotFlexRow>
+                           <WhiteFlexColumnRoot1>
+                      <Ellipses src={`https://file.rendit.io/n/QwwZcWy7LVzWySGa7rdO.png`} />
+                      <Text2>IGBINEDION</Text2> 
+                        </WhiteFlexColumnRoot1>  
                            
                            </div>
                             
-                                    
+                                 
+                                
                            <div className="flex justify-center text-6xl border-2  bg-gray-100 p-6 ">
-                              
-                           <NeonCarrotFlexRow>
-                    <FlexColumn1 width={`148px`}>
-                        <Text1>Completed Request</Text1>
-                        <Text2>0</Text2>
-                        </FlexColumn1>
-                        <Image1 src={`https://file.rendit.io/n/1cRNFELBdOw52PMM094O.svg`} />
-                    </NeonCarrotFlexRow>
-
+                       
+                           <WhiteFlexColumnRoot1>
+                            <Ellipses src={`https://file.rendit.io/n/GGtNM8GELXAq05J1imU0.png`} />
+                            <Text2>&nbsp;&nbsp; &nbsp;  FUTO &nbsp;&nbsp;&nbsp;</Text2>
+                            </WhiteFlexColumnRoot1>   
+                      
+                           </div>
                          
 
+
+
+                           <div className="flex flex-row justify-center text-6xl border-2 bg-gray-100   p-6 ">
+                    
+                           <WhiteFlexColumnRoot1>
+                    <Ellipses src={`https://file.rendit.io/n/esqkOrD4MEonh4O1xuyq.png`} />
+                    <Text2>&nbsp;&nbsp; &nbsp; Delsu &nbsp;&nbsp;&nbsp;</Text2>
+                    </WhiteFlexColumnRoot1> 
+                
+
+
+                               </div> 
+       
+       
+                           <div className="flex justify-center text-6xl border-2 bg-gray-100 p-6 "> 
+                       
+                           <WhiteFlexColumnRoot1>
+                    <Ellipses src={`https://file.rendit.io/n/XvDq0ey8YIkBkbLg00rG.png`}/>
+                    <Text2>&nbsp;&nbsp; &nbsp; FUNAB &nbsp;&nbsp;&nbsp;</Text2>
+                    </WhiteFlexColumnRoot1>    
+                
                            </div>
-          
                             
                        </div>
                          </div>
+
+
+                         <div className="container mx-auto mb-4"> 
+                           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                           <div className="flex justify-center text-6xl border-2 -300 bg-gray-100  p-6 ">
+                            
+                           <WhiteFlexColumnRoot1>
+                      <Ellipses src={`https://file.rendit.io/n/lNdJaZ2FzuWaXhhgnLzB.png`} />
+                      <Text2> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; CU &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</Text2> 
+                        </WhiteFlexColumnRoot1>  
+                           
+                           </div>
+                            
+                                 
+                                
+                           <div className="flex justify-center text-6xl border-2  bg-gray-100 p-6 ">
+                         
+                           <WhiteFlexColumnRoot1>
+                            <Ellipses src={`https://file.rendit.io/n/dme838dIdh93d1AMC5GB.png`} />
+                            <Text2>&nbsp;&nbsp; &nbsp; Bowen &nbsp;&nbsp;&nbsp;</Text2>
+                            </WhiteFlexColumnRoot1>   
+                          
+                           </div>
+                         
+
+
+
+                           <div className="flex flex-row justify-center text-6xl    p-6 ">
+                     
+
+
+                               </div>
+       
+       
+                           <div className="flex justify-center text-6xl  p-6 "> 
+                        
+                           </div>
+                            
+                       </div>
+                         </div>
+
                          </div>  
 
-                         <div >
+                         <div>
 
-                <RectangleRootRoot>
-                  <Link to="/transcript-collection">
-                    <div className='bg-gray-100 px-11 py-11'>
-                <NeonCarrotText>Start a new application</NeonCarrotText>
-                      </div>
-                      </Link>
-                </RectangleRootRoot>
+                         </div>
+                         </div> 
 
-            </div>
-
-
-      
                   
         </>
     );
@@ -127,6 +224,81 @@ export const devices = {
   desktop: `(min-width: ${sizes.desktop})`,
 };
 
+const WhiteFlexColumnRoot = styled.div`
+  
+  border-style: solid;
+  height: 170px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 26.78px;
+  align-items: center;
+  border-radius: 6px;
+  padding: 34px 96.78px 34px 97px;
+  border-width: 1px; 
+`;
+const Image1 = styled.img`
+ 
+  width: 122px;
+  height: 122px;
+
+  @media ${devices.tablet} { 
+    height: 90px;
+    width: 80px;
+  } 
+  
+`;
+const Text1 = styled.div`
+  text-align: center;
+  font-size: 18px;
+  font-family: Roboto;
+  line-height: 27.09px;
+  color: #df8909;
+`;
+
+const WhiteFlexColumnRoot1 = styled.div`
+
+  border-style: solid;
+  height: 170px;
+  color: #fafafa; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 26.78px;
+  align-items: center;
+  border-radius: 6px;
+  padding: 34px 96.78px 34px 97px;
+
+  margin-left: 10px;  
+  margin-right: 10px;  
+`;
+
+
+const Ellipses = styled.img`
+  width: 122px;
+  height: 122px;
+  margin: 0px 0px 0px 3px;
+
+  @media ${devices.tablet} { 
+    height: 90px;
+    width: 80px;
+  } 
+
+`;
+
+
+
+
+const Text2 = styled.p`
+white-space: nowrap;
+display: inline-block;
+text-align: left;
+font-size: 18px;
+font-family: Roboto;
+line-height: 27.09px;
+color: #2d0353; 
+`;
 
 
 
@@ -150,10 +322,11 @@ const FlexRow = styled.div`
 `;
 const Text10 = styled.div`
   mix-blend-mode: normal;
-  font-size: 14px;
+  font-size: 18px;
   font-family: Roboto;
   line-height: 21px;
   color: #ffffff;
+  padding-left:7px;
 `;
 const Text20 = styled.div`
   mix-blend-mode: normal;
@@ -163,10 +336,12 @@ const Text20 = styled.div`
 `;
 const Text30 = styled.div`
   mix-blend-mode: normal;
-  font-size: 32px;
+  font-size: 24px;
   font-family: Product Sans Black;
   line-height: 34.92px;
   color: #ffffff;
+  
+
 
   @media ${devices.mobileL} { 
     margin-right: 100px; 
@@ -189,116 +364,4 @@ const Text40 = styled.div`
   color: #f2994a;
   display: contents;
 `;
-
-
-
-
-const FlexColumn1 = styled.div`
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 13px;
-  flex-grow: 1;
-  align-items: center;
-  width: ${(props) => props.width};
-`;
-const Text1 = styled.div`
-  font-size: 18px;
-  font-family: Roboto;
-  line-height: 27.09px;
-  color: #505050;
-`;
-const Text2 = styled.div`
-  font-size: 36px;
-  font-family: Roboto;
-  line-height: 54.18px;
-  color: #505050;
-  align-self: flex-start;
-`;
-
-const NeonCarrotFlexRow = styled.div`
-  width: 239px;
-  background-color: rgba(242, 153, 74, 0.1);
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 31px;
-  align-items: flex-start;
-  border-radius: 10px;
-  padding: 18px 15px 17px 15px;
-`;
-const Image1 = styled.img`
-  width: 50px;
-  height: 50px;
-`;
-
-
-
-const RectangleRootRoot = styled.div`
-  
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 0px 49px 0px;
- 
-`;
-
-const NeonCarrotText = styled.div`
-  
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  color: #df8909;
-  font-size: 16px;
-  font-family: Product Sans Medium;
-  line-height: 15.52px;
-  white-space: nowrap;
-  background-color: rgba(224, 137, 9, 0.1);
-  border-radius: 6px;
-  padding: 30px;
-`;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export default HomePage; 

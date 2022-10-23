@@ -2,7 +2,7 @@
 
 import React from 'react'
 import styled from "styled-components";  
-import login from "../assets/img/Transcriptrequest.PNG";
+import login from "../assets/img/HR.PNG";
 import "./br.css" 
 import { Link } from 'react-router-dom';
  
@@ -41,32 +41,26 @@ const SignupNow = () => {
             <FlexColumn>
 
                 <FlexColumn1>
-                <Text3>Sign up as a Parent or Guardian </Text3>
+                <Text3>Sign up</Text3>
 
                 <form>           
+              
                 <FlexColumn2 margin={`0px 0px 10px 0px`}> 
 
-                <Text4 htmlFor="Surname">  FirstName</Text4>        
-                 <input className='form' placeholder='Akinyemi' type="text" id="Surname"/>  
+                <Text4 htmlFor="Surname">  Organization Name</Text4>        
+                 <input className='form'  type="text" id="Surname"/>  
                  </FlexColumn2> 
-                 <FlexColumn2 margin={`0px 0px 10px 0px`}> 
-
-                 <Text4 htmlFor="FirstName">  Surname</Text4>        
-                 <input className='form' placeholder='Ayomide' type="text" id="FirstName"/>  
-                 </FlexColumn2> 
-                 <FlexColumn2 margin={`0px 0px 10px 0px`}> 
-
-                 <Text4 htmlFor="JAMBREGNO"> Student Id</Text4>         
-                 <input className='form' placeholder='STA/11/7009' type="text" id="Student Id"/>  
-                 </FlexColumn2> 
+               
                  <FlexColumn2 margin={`0px 0px 10px 0px`}>
-
-                   
-                 
-
-                 <Text4 htmlFor="parentemail"> Email</Text4>        
-                 <input className='form' placeholder='akinzzz@zzz.com' type="email" id="email"/>  
+                 <Text4 htmlFor="email"> Email</Text4>        
+                 <input className='form'  type="email" id="email"/>  
                  </FlexColumn2>  
+
+                 <FlexColumn2 margin={`0px 0px 10px 0px`}> 
+
+                  <Text4 htmlFor="Password">  Create Password</Text4>        
+                  <input className='form'  type="password" id="Surname"/>  
+                  </FlexColumn2> 
                  
                 <button className='purplebtn' type='submit'>Sign Up</button> 
                 </form> 

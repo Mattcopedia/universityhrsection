@@ -49,12 +49,7 @@ export default function Sidebar() {
                   </Link> 
                  
                    
-                 <Link to="/transcript-collection">
-                    <WhiteFlexRow>
-                <Image1a src={`https://file.rendit.io/n/7OUSS3WQDM8590MQKxa2.svg`} />
-                <Text2a>New application</Text2a> 
-              </WhiteFlexRow>
-              </Link>
+             
              
 
                      <div className='focus:blue'>
@@ -63,7 +58,7 @@ export default function Sidebar() {
                     <NeonCarrotRectangle margin={`0px 21px 0px 0px`} />
                   
                     <Image1 src={`https://file.rendit.io/n/wf2zhCB3LkjFgVLkb6SX.svg`} />
-                    <Text2  margin={`0px 88px 0px 0px`}  >
+                    <Text2  margin={`0px 92px 0px 0px`}  >
                       Dashboard</Text2> 
              
                   </FlexRow2> 
@@ -74,13 +69,13 @@ export default function Sidebar() {
 
 
                      <div className='focus:blue'>
-                     <NavLink to="/active-application" exact  >
+                     <NavLink to="/history-hr" exact  >
                   <FlexRow2 margin={`0px 0px 33px 0px`} onClick={() => setShowSidebar('-left-64')}>
                     <NeonCarrotRectangle margin={`0px -2px 0px 0px`} />
                   
-                    <Image1  src={`https://file.rendit.io/n/MTx8bc0fuyXVxVtAdUtf.svg`} />
-                    <Text2  margin={`0px 88px 0px 0px`}  >
-                      Active</Text2> 
+                    <Image1 src={`https://file.rendit.io/n/jIt7rpAWKWaTdUdfTpU5.svg`} />
+                    <Text2  margin={`0px 94px 0px 0px`}  >
+                      History</Text2> 
              
                   </FlexRow2> 
                   </NavLink>
@@ -88,8 +83,8 @@ export default function Sidebar() {
              
                      </div>
 
-                     {/* <div className='focus:blue'>
-                     <NavLink to="/transcript-payment" exact  >
+                     <div className='focus:blue'>
+                     <NavLink to="/payment-details" exact  >
                   <FlexRow2 margin={`0px 0px 33px 0px`} onClick={() => setShowSidebar('-left-64')}>
                     <NeonCarrotRectangle margin={`0px -2px 0px 0px`} />
                   
@@ -98,24 +93,25 @@ export default function Sidebar() {
                       Payment</Text2> 
              
                   </FlexRow2> 
-                  </NavLink>   
+                  </NavLink>
+                 
              
-                     </div> */}
+                     </div>
 
 
                      <div className='focus:blue'>
-                     <NavLink to="/history" exact  >
+                     <NavLink to="/student-information" exact  >
                   <FlexRow2 margin={`0px 0px 33px 0px`} onClick={() => setShowSidebar('-left-64')}>
                     <NeonCarrotRectangle margin={`0px -2px 0px 0px`} />
                   
-                    <Image1 src={`https://file.rendit.io/n/jIt7rpAWKWaTdUdfTpU5.svg`} />
-                    <Text2  margin={`0px 88px 0px 0px`}  >
-                      History</Text2> 
+                    <Image1 src={`https://file.rendit.io/n/H5cBdyWtycaRxkh4P5g9.png`} />
+                    <Text2  margin={`0px 69px 0px 0px`}  >
+                      Student Info</Text2> 
              
                   </FlexRow2> 
                   </NavLink>
                  
-             
+              
                      </div>
 
                   
@@ -220,31 +216,7 @@ const Image1 = styled.img`
   }
 `;
 
-const WhiteFlexRow = styled.div`
-  gap: 5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-self: flex-end;
-  align-items: center;
-  background-color: #ffffff;
-  border-radius: 6px;
-  padding: 11px 16px 11px 11px;
-  margin: 0px 0px 37px 0px;
-  margin-right:15px;
-`;
-const Image1a = styled.img`
-  width: 24px;
-  height: 24px;
-`;
-const Text2a = styled.div`
-  align-self: flex-end;
-  color: #2d0353;
-  font-size: 14px;
-  font-family: Product Sans Medium;
-  line-height: 21.21px;
-  white-space: nowrap;
-`;
+
 
 
 

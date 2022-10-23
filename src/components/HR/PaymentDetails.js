@@ -1,25 +1,39 @@
+import Sidebar from 'components/Sidebar';
 import React from 'react'
 import styled from "styled-components";  
 import "../br.css" 
 
 
-const ActiveApplicationHeader = () => {
+const PaymentDetails = () => {
   return (
+    <>
+    <Sidebar />
     <div>
             <div className="grid grid-cols-5 py-4 mb-16 mx-4 resultcolor ">
        <div className=" col-span-4"> 
        <FlexColumnRoot>
-      <Paragraph> Active <br className="responsivemodal"></br> Application </Paragraph> 
+      <Paragraph> Payment <br className="responsivemodal"></br> </Paragraph> 
      </FlexColumnRoot>
         
        </div>
        <div className="">   
-       <ImageRoot src={`https://file.rendit.io/n/UJPPBLuU908VNZAufpz4.png`}/> 
+       <ImageRoot src={`https://file.rendit.io/n/OPOUlsP6EdDcW3xpKSzc.png`} /> 
        </div>   
      
-    </div> 
+    </div>
+        
+        <div className="flex flex-col justify-center">
+
+    <PreviewRootRoot>Payment</PreviewRootRoot>
+         
+              <Text2zw >
+                    To access student information, you are required to pay ₦5,000 for subscription
+                     <br /> Payment can be made online with your Bank card.
+                        </Text2zw>
+                        </div>
 
     </div>
+    </>
   )
 }
 
@@ -70,4 +84,29 @@ width: 89px;
 height: 89px;
 `;
 
-export default ActiveApplicationHeader
+
+
+const Text2zw = styled.div`
+  font-size: 16px;
+  font-family: Roboto;
+  line-height: 24px;
+  color: #505050;
+  text-align:center;
+`;
+
+
+
+const PreviewRootRoot = styled.div`
+ 
+  color: #2d0353;
+  font-size: 24px;
+  font-family: Product Sans Medium;
+  line-height: 23.28px;
+  font-weight:bold;
+  text-align:center;
+  display: flex;
+  justify-content:center;
+  margin-bottom:10px;
+  
+`;
+export default PaymentDetails; 

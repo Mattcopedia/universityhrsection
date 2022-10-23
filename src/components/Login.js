@@ -1,7 +1,7 @@
 
 import React, {useRef, useEffect, useState } from 'react'
 import styled from "styled-components";  
-import login from "../assets/img/Transcriptrequest.PNG"; 
+import login from "../assets/img/HR.PNG"; 
 import "./br.css" 
 import { Link } from 'react-router-dom';
 import { useHistory } from 'react-router-dom'; 

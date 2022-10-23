@@ -1,6 +1,5 @@
 
        import React from "react"; 
-       import { NavLink } from 'react-router-dom';
        import styled from "styled-components";
        import Sidebar from "components/Sidebar";
   
@@ -17,21 +16,15 @@
         <div class="max-w-7xl ml-7 heropattern py-11 px-3 mr-7  grid grid-cols-12 ">
               <div class="col-span-12 mt-0.4   md:col-span-12 object-fill lg:col-span-6">
               
-                 {/* <FlexColumn >
-                 <FlexRow> 
-                   <Text10>HR Officer</Text10>
-                   <Text20></Text20> 
-                 </FlexRow>
-                 <Text30>Welcome to  <br className="responsivemodal"></br>Rakoni Verification</Text30>
-               </FlexColumn>   */}
+             
 
-               <FlexColumn1>
+               <FlexColumn>
                 <FlexRow>
                   <Text10>HR Officer</Text10>
                   <Text20>🚀</Text20>
                 </FlexRow>
-                <Text30>HR Officer Name<br className="responsivemodal"></br> </Text30>
-              </FlexColumn1>  
+                <Text30>HR Officer<br className="responsivemodal"></br> Name</Text30>
+              </FlexColumn>   
    
 
               </div>
